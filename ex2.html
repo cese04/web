@@ -1,0 +1,88 @@
+<html>
+    <head>
+        <style>
+    body{
+        background-color: #e74c3c
+    }
+    .ancho100{
+        width:100%;
+    }
+    .rojo{
+        background-color: red;
+    }
+    .blanco{
+        background-color: white;
+    }
+
+    }
+    .textoBlanco{
+        color:white;
+    }
+    .derecha{
+        text-align:right;
+    }
+    .centrar{
+        text-align: center;
+    }
+    a{
+        color: white;
+        text-decoration: none;
+    }
+    a:hover{
+        color:black;
+    }
+</style>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        
+        <script src="evaluarAnemia.js">
+        </script>
+    </head>
+	<body>
+        <div class="centrar blanco"
+             style="margin:10%;
+            border:10px solid white;
+            border-radius:10px;
+            font-family:Verdana">
+		<table class="blanco ancho100 ">
+			<tr>
+				<th>Nombre</th>
+				<th>Edad</th>
+				<th>Sexo</th>
+				<th>Nivel de Hemoglobina</th>
+                <th>Evaluar</th>
+			</tr>
+			<tr>
+				<th>Eduardo Melendez</th>
+				<th>29</th>
+				<th>Hombre</th>
+				<th>14</th>
+                <th><button onclick="evaluar(P1)"></button></th>
+			</tr>
+			<tr>
+				<th>Elena Alonso</th>
+				<th>17</th>
+				<th>Mujer</th>
+				<th>16</th>
+                <th><button onclick="evaluar(P2)"></button></th>
+			</tr>
+			<tr>
+				<th>Luis Maya</th>
+				<th>36</th>
+				<th>Hombre</th>
+				<th>8</th>
+                <th><button onclick="evaluar(P3)"></button></th>
+			</tr>
+            <tr>
+				<th><input id="Nombre"></th>
+				<th><input id="Edad"></th>
+				<th><input id="Sexo"></th>
+				<th><input id="Nivel"></th>
+                <th><button onclick="evaluar2()"></button></th>
+			</tr>
+		</table>
+            </div>
+		
+
+	</body>
+</html>
